@@ -1,119 +1,119 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
 *, :after, :before {
-    box-sizing: border-box;
-  }
-  
-  /*
-   BARVY
-   pozadi     #f5f5f5
-   Jedeme retro cernobile, dnes barvy nepotrebujeme.
-  */
-  
-  body {
-    margin: auto;
-    padding: 0;
-    background-color: #f5f5f5;
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  /* HLAVICKA */
-  
-  .zahlavi {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0, 0.1)), url(images/island-hlavicka.jpg);
-    height: 450px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-  }
-  
-  h1 {
-    color: white;
-    margin: 0;
-    font-size: 95px;
-    text-align: center;
-    padding-top: 60px;
-    font-family: 'Raleway', serif;
-  }
-  
-  .autor {
-    opacity: 70%;
-    font-style: italic;
-  }
-  
-  .obsah {
-    color: white;
-    padding-left: 280px;
-    padding-right: 280px;
-    text-align: center;
-    font-weight: 500;
-  }
-  
-  /* MENU */
-  
-  .menu {
-    float: left;
-  }
-  
-  ul {
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 100px;
-    padding-left: 50px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: grey;
-    font-size: 12px;
-  }
-  
-  /* OBSAH */
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .container > div {
-    background-color: #f1f1f1;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #center-column {
-    display: block;
-    flex: 1 1 960px;
-    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
-    margin-top: -50px;
-    z-index: 1;
-    object-fit: contain;
-  }
-  #center-column  p {
-    padding: 20px;
-  }
-  .vsechno {
-    margin: auto;
+  box-sizing: border-box;
+}
 
-  }
-   .vsechno  img {
-    width: 100% ;
-  }
-  
- 
-  .uvod img,
-  .proc img,
-  
-  .prvni {
-    padding-top: 30px;
-  }
-  
-  
-  /* FOTOGALERIE */
-  
-  /* PATICKA */
-  
+/*
+BARVY
+pozadi     #f5f5f5
+Jedeme retro cernobile, dnes barvy nepotrebujeme.
+*/
+
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* HLAVICKA */
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0, 0.1)), url(images/island-hlavicka.jpg);
+  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 95px;
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Raleway', serif;
+}
+
+.author {
+  opacity: 70%;
+  font-style: italic;
+}
+
+.obsah {
+  color: white;
+  padding-left: 280px;
+  padding-right: 280px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* MENU */
+
+.menu {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+/* OBSAH */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div {
+  background-color: #f1f1f1;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#center-column {
+  display: block;
+  flex: 1 1 960px;
+  width: 960px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+  z-index: 1;
+  object-fit: contain;
+}
+#center-column p, h2{
+  padding: 20px;
+}
+
+.general {
+  margin: auto;
+}
+.img {
+  max-width: 100%;
+}
+
+.intro img,
+.why img,
+.must-see img,
+
+.prvni {
+  padding-top: 30px;
+}
+
+
+/* FOTOGALERIE */
+
+/* PATICKA */
