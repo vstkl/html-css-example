@@ -98,8 +98,9 @@ a {
   z-index: 1;
   object-fit: contain;
 }
-#center-column p, h2{
-  padding: 20px;
+#center-column>{
+
+
 }
 
 .general {
@@ -113,7 +114,9 @@ a {
   padding-top: 30px;
 }
 
-
+.text-content {
+  padding: 20px;
+}
 /* FOTOGALERIE */
 .gallery {
 
