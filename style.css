@@ -2,6 +2,10 @@
 *, :after, :before {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
+
 
 /*
 BARVY
@@ -101,10 +105,6 @@ a {
 .general {
   margin: auto;
 }
-.img {
-  max-width: 100%;
-}
-
 .intro img,
 .why img,
 .must-see img,
