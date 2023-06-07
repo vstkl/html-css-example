@@ -18,13 +18,13 @@ body {
   padding: 0;
   background-color: #f5f5f5;
   font-family: 'Merriweather', serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.6;
 }
 
 /* HLAVICKA */
 
-.header {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0, 0.1)), url(images/island-hlavicka.jpg);
   height: 450px;
   width: 100%;
@@ -32,6 +32,10 @@ body {
   background-size: cover;
   z-index: 0;
 }
+footer {
+  font-size: 0.7em;
+}
+
 
 h1 {
   color: white;
@@ -47,7 +51,7 @@ h1 {
   font-style: italic;
 }
 
-.obsah {
+.summary{
   color: white;
   padding-left: 280px;
   padding-right: 280px;
@@ -59,6 +63,7 @@ h1 {
 
 .menu {
   float: left;
+  width: 200px;
 }
 
 ul {
@@ -71,7 +76,7 @@ ul {
 a {
   text-decoration: none;
   color: grey;
-  font-size: 12px;
+  font-size: 0.9em;
 }
 
 /* OBSAH */
@@ -91,8 +96,8 @@ a {
 
 #center-column {
   display: block;
-  flex: 1 1 960px;
-  width: 960px;
+  flex: 0 0 960px;
+  flex-basis: 960px;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
   margin-top: -50px;
   z-index: 1;
@@ -102,25 +107,40 @@ a {
 
 
 }
-
-.general {
-  margin: auto;
+.offset-left {
+  margin-left: 200px;
 }
+.offset-right {
+  margin-right: 200px;
+}
+
+
 .intro img,
 .why img,
 .must-see img,
 
-.prvni {
+.first {
   padding-top: 30px;
 }
 
 .text-content {
   padding: 20px;
+  text-align: justify;
 }
 /* FOTOGALERIE */
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
 }
+.gallery > .photo  {
+  margin: 0;
 
-.desc {}
+  line-height: 0%;
+}
+
+.desc {
+  display: none;
+  margin: auto;
+}
 /* PATICKA */
