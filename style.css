@@ -1,102 +1,119 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
-
-/*
- BARVY
- pozadi     #f5f5f5
- Jedeme retro cernobile, dnes barvy nepotrebujeme.
-*/
-
-
-body {
-    margin: 0;
+*, :after, :before {
+    box-sizing: border-box;
+  }
+  
+  /*
+   BARVY
+   pozadi     #f5f5f5
+   Jedeme retro cernobile, dnes barvy nepotrebujeme.
+  */
+  
+  body {
+    margin: auto;
     padding: 0;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
-}
-
-/* HLAVICKA */
-
-
-.zahlavi {
+  }
+  
+  /* HLAVICKA */
+  
+  .zahlavi {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0, 0.1)), url(images/island-hlavicka.jpg);
     height: 450px;
     width: 100%;
     background-position: center;
     background-size: cover;
-
-}
-
-h1 {
+    z-index: 0;
+  }
+  
+  h1 {
     color: white;
     margin: 0;
     font-size: 95px;
     text-align: center;
     padding-top: 60px;
     font-family: 'Raleway', serif;
-}
-
-.autor {
+  }
+  
+  .autor {
     opacity: 70%;
     font-style: italic;
-}
-.obsah {
+  }
+  
+  .obsah {
     color: white;
     padding-left: 280px;
     padding-right: 280px;
     text-align: center;
     font-weight: 500;
-}
-
-/* MENU */
-
-.menu {
+  }
+  
+  /* MENU */
+  
+  .menu {
     float: left;
-    padding-bottom: 200px;
-}
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
     text-decoration: none;
     padding-right: 100px;
     padding-left: 50px;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: grey;
     font-size: 12px;
-}
-
-
-/* OBSAH */
-
-.vsechno {
-    width: 960px;
+  }
+  
+  /* OBSAH */
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container > div {
+    background-color: #f1f1f1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #center-column {
+    display: block;
+    flex: 1 1 960px;
     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
     margin-top: -50px;
+    z-index: 1;
+    object-fit: contain;
+  }
+  #center-column  p {
+    padding: 20px;
+  }
+  .vsechno {
+    margin: auto;
 
-}
-
-.uvod img, .proc img, .videt img {
-    width: 960px;
-}
-
-.prvni {
+  }
+   .vsechno  img {
+    width: 100% ;
+  }
+  
+ 
+  .uvod img,
+  .proc img,
+  
+  .prvni {
     padding-top: 30px;
-}
-
-.uvod p {
-    padding-left: 20px;
-}
-
-
-
-/* FOTOGALERIE */
-
-
-
-
-/* PATICKA */
+  }
+  
+  
+  /* FOTOGALERIE */
+  
+  /* PATICKA */
+  
